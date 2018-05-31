@@ -1,0 +1,22 @@
+<body >
+<h1 align="center">Edit Developer</h1>
+<div class="container">
+<form (ngSubmit)="processForm()">
+
+<div class="form group">
+<label for="firstName">First Name</label>
+<input type="text" name="firstName" class="form-control" [(ngModel)]="user.firstName">
+</div>
+<div class="form group">
+<label for="lastName">Last Name</label>
+<input type="text" name="lastName" class="form-control" [(ngModel)]="user.lastName">
+</div>
+<div class="form group">
+<label for="email">Email</label>
+<input type="text" name="email" class="form-control" [(ngModel)]="user.email">
+</div>
+<input type="submit" value="save" class="btn btn-success" >
+</form>
+
+</div>
+</body>
